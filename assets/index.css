@@ -1,0 +1,452 @@
+:root {
+    --primary-color: rgb(27, 31, 41);
+    --secondary-color: rgb(237, 242, 252);
+    --c-brand: #862050;
+    --yellow-color: rgb(253, 184, 19);
+}
+
+body {
+    color: var(--secondary-color);
+    line-height: 1.7;
+}
+
+h1,h4{
+    font-weight: 700;
+    color:var(--secondary-color)
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+a:hover{
+    color: var(--c-brand);
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--primary-color);
+}
+
+.navbar.scrolled {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .navbar-nav .nav-link {
+    font-weight: 700;
+    color: var(--secondary-color);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    transform: scale(1.3);
+    color: var(--c-brand);
+}
+
+.navbar-toggler-icon {
+    background-color: var(--secondary-color);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--secondary-color) !important;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: var(--c-brand) !important;
+    transform: scale(1.5);
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+}
+
+.social-icon:hover {
+    transform: scale(1.5);
+}
+
+.moon {
+    color: var(--primary-color);
+}
+
+.dark-theme {
+    --primary-color: rgb(237, 242, 252);
+    --secondary-color: rgb(27, 31, 41);
+}
+
+.btn {
+    padding: 10px 24px;
+    border-radius: 0;
+    border-width: 2px;
+    font-weight: 2px;
+    background-color: var(--primary-color);
+    color: var(--c-brand);
+    border-color: var(--secondary-color);
+}
+
+.btn-brand:hover {
+    background-color: var(--secondary-color);
+    color: var(--c-brand);
+}
+
+#home {
+    background-color: var(--primary-color);
+}
+
+.section-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-title {
+    max-width: 560px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary-color);
+    display: inline-block;
+}
+
+.section-connector {
+    position: relative;
+}
+
+.section-connector::after {
+    content: "";
+    width: 2px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+#services {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section-title {
+        max-width: 100%;
+        margin: 0 auto 30px;
+    }
+
+    .section-title .line {
+        width: 40px;
+    }
+
+    .section-connector::after {
+        left: 20px;
+    }
+}
+
+.custom-link {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease; /* تأثير الانتقال عند التمرير */
+}
+
+.custom-link {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease; /* تأثير الانتقال عند التمرير */
+}
+
+.custom-link span {
+    font-weight: 700;
+}
+
+.custom-link i {
+    width: 50px; /* زيادة عرض الأيقونة */
+    height: 50px; /* زيادة ارتفاع الأيقونة */
+    font-size: 28px; /* حجم الخط داخل الأيقونة */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    color: var(--secondary-color);
+    margin-left: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* تأثير عند تغيير اللون أو الحركة */
+}
+
+.custom-link:hover {
+    transform: translate(6px); /* الحركة عند التمرير */
+}
+
+.custom-link:hover i {
+    background-color: var(--hover-primary-color); /* لون خلفية مختلف عند التمرير */
+    transform: scale(1.1); /* تكبير الأيقونة قليلاً عند التمرير */
+}
+
+#Work {
+    background-color: var(--primary-color); /* إضافة خلفية للقسم */
+    color: var(--secondary-color); /* التأكد من وضوح النص */
+}
+
+#Work .section-title h1, #Work .section-title p {
+    color: var(--secondary-color); /* التأكد من وضوح النصوص */
+}
+
+.project {
+    width: 100%;
+    height: 250px; /* يمكن تغيير القيمة */
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project .content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project:hover .content {
+    top: 0;
+}
+
+/* تنسيق الصفوف */
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق الأعمدة */
+.col-lg-3, .col-sm-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* تنسيق الحاوية داخل كل عمود */
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تأثير عند التمرير فوق الشعار */
+.client:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* تنسيق الصور داخل الشعارات */
+.client img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain; /* لضبط الصورة داخل الإطار */
+}
+
+/* التأثير عند التمرير على الصورة */
+.client img:hover {
+    opacity: 0.8;
+}
+
+/* في حال كان العرض أقل من 992px */
+@media (max-width: 992px) {
+    .col-lg-3 {
+        flex: 1 1 45%; /* عرض 45% للأعمدة */
+    }
+}
+
+/* في حال كان العرض أقل من 768px */
+@media (max-width: 768px) {
+    .col-sm-6 {
+        flex: 1 1 100%; /* عرض 100% للأعمدة */
+    }
+}
+
+#Resume {
+    background-color: var(--primary-color); /* إضافة خلفية للقسم */
+    color: var(--secondary-color); /* التأكد من وضوح النص */
+}
+
+#Resume .section-title h1, #Resume .section-title p {
+    color: var(--secondary-color); /* التأكد من وضوح النصوص */
+}
+
+#Blog {
+    background-color: var(--primary-color); /* إضافة خلفية للقسم */
+    color: var(--secondary-color); /* التأكد من وضوح النص */
+}
+
+#Blog .section-title h1, #Blog .section-title p {
+    color: var(--secondary-color); /* التأكد من وضوح النصوص */
+}
+
+/* تنسيق الصور */
+.gblgim {
+    width: 100%;
+    height: 250px; /* ارتفاع ثابت لجميع الصور */
+    object-fit: cover; /* الحفاظ على تناسق الصورة */
+    border-radius: 10px;
+}
+
+/* تنسيق محتوى العمود (bq-content) */
+.bq-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* توزيع العناصر داخل المحتوى */
+    padding: 15px;
+    height: 350px; /* ارتفاع ثابت لجميع المحتويات النصية */
+}
+
+/* تنسيق العنوان */
+.bq-content h1 {
+    font-size: 1.5rem; /* حجم العنوان */
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0; /* هامش بين العنوان والفقرة */
+    line-height: 1.3;
+    flex-grow: 1; /* يسمح للنص بالنمو داخل المساحة */
+}
+
+/* تنسيق الفقرة */
+.bq-content p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0; /* هامش بين الفقرة والرابط */
+    line-height: 1.6;
+    flex-grow: 1; /* يجعل الفقرة تأخذ المساحة المتبقية */
+}
+
+/* تنسيق رابط "قراءة المزيد" */
+.custom-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.custom-link span {
+    margin-right: 5px;
+}
+
+.custom-link i {
+    font-size: 16px;
+}
+
+#Contact {
+    background-color: var(--primary-color); /* إضافة خلفية للقسم */
+    color: var(--secondary-color); /* التأكد من وضوح النص */
+}
+
+#Contact .section-title h1, #Contact .section-title p {
+    color: var(--secondary-color); /* التأكد من وضوح النصوص */
+}
+
+
+#contact .form-control {
+    border-radius: 0;
+}
+
+#contact .form-control:focus {
+    box-shadow: none;
+    border-color: var(--c-brand);
+}
+
+#contact input .form-control {
+    height: 44px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding-top: 80px;
+}
+
+footer h4 {
+    color: var(--secondary-color);
+    margin-bottom: 24px;
+}
+
+footer p,
+footer li,
+footer li a {
+    color: var(--secondary-color);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li{
+    margin: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

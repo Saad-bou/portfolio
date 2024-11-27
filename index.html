@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/index.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Brand -->
+            <a href="#" class="navbar-brand">Bouhamou Saad.</a>
+
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links and Social Icons -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navigation Links -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Social Icons -->
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item">
+                        <a href="#" class="social-icon nav-link" aria-label="Twitter"><i class="ri-twitter-line"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="social-icon nav-link" aria-label="GitHub"><i class="ri-github-line"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="social-icon nav-link" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="social-icon nav-link" aria-label="Email"><i class="ri-mail-line"></i></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item">
+                        <a href="#" class="social-icon nav-link" id="icon" aria-label="Toggle Theme">
+                            <i class="fas fa-moon"></i> <!-- أيقونة القمر في البداية -->
+                        </a>
+                    </li>
+                </ul>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="d-flex align-items-center min-vh-100">
+        <div class="container"> <!-- تم تصحيح الإملاء هنا -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-2 fw-bold" data-aos="fade-up">Hy there! I am <span class="texte-brand">Bouhamou Saad.</span></h1>
+                    <h4 class="my-3 mb-5" data-aos="fade-up" data-aos-delay="100">Developer web</h4>
+                    <div><a href="#" class="btn btn-brand" data-aos="fade-up" data-aos-delay="100">Get connected</a></div> <!-- تم إضافة إغلاق رابط الـ <a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="section-padding section-connector">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center" data-aos="fade-up" data-aos-delay="100">
+                        <h1>Services</h1>
+                        <p>
+                            Full Stack Developer skilled in HTML, CSS, JavaScript, React, Python, PHP, and MySQL, with expertise in cloud computing (AWS/Azure), DevOps, and e-commerce. Experienced in web project management, IT maintenance, and digital marketing, I bring autonomy, precision, and creativity to deliver innovative solutions.
+                        </p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 text-center"  data-aos="fade-up" data-aos-delay="100">
+                <!-- Innovative Solutions -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="service py-5 px-4 border">
+                        <div class="service-icon">
+                            <i class="ri-lightbulb-line"></i> <!-- Icon for innovation -->
+                        </div>
+                        <h5 class="mt-4">Innovative Solutions</h5>
+                        <p>
+                            We design innovative solutions to tackle future challenges by combining technology and creativity.
+                        </p>
+                        <a href="#" class="custom-link">
+                            <span>Read More</span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- Web Development -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="service py-5 px-4 border">
+                        <div class="service-icon">
+                            <i class="ri-code-s-slash-line"></i> <!-- Icon for web development -->
+                        </div>
+                        <h5 class="mt-4">Web Development</h5>
+                        <p>
+                            Modern web development expertise using advanced technologies to deliver exceptional user experiences.
+                        </p>
+                        <a href="#" class="custom-link">
+                            <span>Read More</span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- User Experience -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="service py-5 px-4 border">
+                        <div class="service-icon">
+                            <i class="ri-user-line"></i> <!-- Icon for user experience -->
+                        </div>
+                        <h5 class="mt-4">User Experience</h5>
+                        <p>
+                            We focus on improving user experience by designing intuitive and accessible interfaces.
+                        </p>
+                        <a href="#" class="custom-link">
+                            <span>Read More</span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+            
+                <!-- Collaboration -->
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="service py-5 px-4 border">
+                        <div class="service-icon">
+                            <i class="ri-team-line"></i> <!-- Icon for collaboration -->
+                        </div>
+                        <h5 class="mt-4">Collaboration</h5>
+                        <p>
+                            Collaboration is at the heart of our work. We believe that teamwork produces exceptional results.
+                        </p>
+                        <a href="#" class="custom-link">
+                            <span>Read More</span>
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>                                                             
+        </div>
+    </section>
+    <section id="Work" class="section-padding section-connector">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center" data-aos="fade-up" data-aos-delay="100">
+                        <h1>Work</h1>
+                        <p>
+                        As a passionate programmer, I specialize in creating efficient, user-friendly solutions. My journey spans diverse technologies, from web development using HTML, CSS, and JavaScript to full-stack expertise in modern frameworks. I thrive on solving problems, learning new skills, and delivering impactful software that makes a difference.   
+                        </p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project">
+                            <img src="./assets/images/1.JPG" alt="">
+                            <div class="content">
+                                <a href="./assets/images/1.JPG" data-fancybox="gallery" class="btn btn-outline">view projet</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project">
+                            <img src="./assets/images/2.JPG" alt="">
+                            <div class="content">
+                                <a href="./assets/images/2.JPG" data-fancybox="gallery" class="btn btn-outline">view projet</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project">
+                            <img src="./assets/images/3.JPG" alt="">
+                            <div class="content">
+                                <a href="./assets/images/3.JPG" data-fancybox="gallery" class="btn btn-outline">view projet</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project">
+                            <img src="./assets/images/4.JPG" alt="">
+                            <div class="content">
+                                <a href="./assets/images/4.JPG" data-fancybox="gallery" class="btn btn-outline">view projet</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project">
+                            <img src="./assets/images/5.JPG" alt="">
+                            <div class="content">
+                                <a href="./assets/images/5.JPG" data-fancybox="gallery" class="btn btn-outline">view projet</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project">
+                            <img src="./assets/images/6.JPG" alt="">
+                            <div class="content">
+                                <a href="./assets/images/6.JPG" data-fancybox="gallery" class="btn btn-outline">view projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-padding pb-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title text-center" data-aos="fade-up" data-aos-delay="100">
+                                <h1>Clients I've worked with</h1>
+                                <p>
+                                    Excited to partner with visionary clients and bring their ideas to life.
+                                    Let's create impactful solutions together for a brighter tomorrow.
+                                </p>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="client p-4 border">
+                                <img src="./assets/images/11.svg" alt="Logo 1">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="client p-4 border">
+                                <img src="./assets/images/22.svg" alt="Logo 2">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="client p-4 border">
+                                <img src="./assets/images/33.svg" alt="Logo 3">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="client p-4 border">
+                                <img src="./assets/images/44.svg" alt="Logo 4">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="client p-4 border">
+                                <img src="./assets/images/55.svg" alt="Logo 5">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="client p-4 border">
+                                <img src="./assets/images/66.svg" alt="Logo 6">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="client p-4 border">
+                                <img src="./assets/images/77.svg" alt="Logo 7">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="client p-4 border">
+                                <img src="./assets/images/88.svg" alt="Logo 8">
+                            </div>
+                        </div>
+                    </div>
+                    
+                                
+                </div>
+            </div>
+        </section>
+
+        <section id="Resume" class="section-padding section-connector">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center" data-aos="fade-up" data-aos-delay="100">
+                            <h1>Education & Experience</h1>
+                            <p>
+                                With a solid foundation in computer development, I have gained hands-on experience in web development, full-stack programming, and project management. My educational background, combined with professional exposure, allows me to tackle complex challenges and deliver high-quality solutions.
+                            </p>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-5">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <!-- Baccalaureate Section -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                                <div class="eduexp p-5 pt-0">
+                                    <h5>Baccalaureate in Physics and Chemistry</h5>
+                                    <small>2019</small>
+                                    <p>Graduating with a scientific baccalaureate in Physics and Chemistry, I gained a solid foundation in analytical thinking and problem-solving. These skills have significantly influenced my approach to technology and helped build the foundation for my career in software development.</p>
+                                </div>
+                            </div>
+                
+                            <!-- Faculty of Science in Rabat Section -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                                <div class="eduexp p-5 pt-0">
+                                    <h5>Faculty of Science in Rabat (Physics and Chemistry)</h5>
+                                    <small>2019-2022</small>
+                                    <p>At the Faculty of Science in Rabat, I deepened my understanding of scientific principles and analytical techniques. This academic experience has honed my critical thinking and prepared me for my transition into technology and software development.</p>
+                                </div>
+                            </div>
+                
+                            <!-- Technicien Spécialisé en Développement Informatique Section -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                                <div class="eduexp p-5 pt-0">
+                                    <h5>Technicien Spécialisé en Développement Informatique</h5>
+                                    <small>2022-2024</small>
+                                    <p>During my specialized technician degree in Computer Development, I acquired hands-on experience in software engineering, programming languages, and database management. These skills have prepared me to create efficient and scalable software solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <!-- Internship at the Ministry of Equipment and Water Section -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                                <div class="eduexp p-5 pt-0">
+                                    <h5>Internship at the Ministry of Equipment and Water</h5>
+                                    <small>2024</small>
+                                    <p>During my internship at the Ministry of Equipment and Water, I assisted with the maintenance of communication lines to ensure stable connectivity. I also managed the ministry's social media accounts and contributed to public engagement while working on weather data collection tools to support optimal water resource management.</p>
+                                </div>
+                            </div>
+                
+                            <!-- Personal Portfolio Section -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                                <div class="eduexp p-5 pt-0">
+                                    <h5>Personal Portfolio</h5>
+                                    <small>2024</small>
+                                    <p>My personal portfolio features a diverse range of projects that showcase my skills as a developer. It includes web development, e-commerce, and software solutions, demonstrating my ability to solve complex problems and deliver user-friendly, efficient solutions across both front-end and back-end development.</p>
+                                </div>
+                            </div>
+                
+                            <!-- E-commerce Website Project Section -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                                <div class="eduexp p-5 pt-0">
+                                    <h5>E-commerce Website Project</h5>
+                                    <small>2024</small>
+                                    <p>For my e-commerce project, I developed a fully functional online store with an intuitive interface. The site includes secure payment processing, an admin dashboard, and responsive design, ensuring an excellent user experience across both desktop and mobile devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                
+            </div>
+        </section>
+        <section id="Blog" class="section-padding section-connector">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center" data-aos="fade-up" data-aos-delay="100">
+                            <h1>Blog</h1>
+                            <p>
+                                Welcome to my blog where I share my journey as a Full Stack Developer. Here, you'll find insights on web development, programming best practices, cloud computing, and the latest trends in tech. Whether you're just starting or looking to deepen your expertise, I hope to provide valuable content that helps you grow in the world of development.
+                            </p>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row gy-5">
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="100">
+                    <div class="bq">
+                        <img class="gblgim" src="./assets/images/111.jpg" alt="Image 1">
+                        <div class="bq-content pt-4">
+                            <h1>Understanding Full Stack Development</h1>
+                            <p>
+                                Full stack development is a comprehensive approach to web development, covering both the front-end and back-end. This article explores the essential tools and technologies for building modern web applications.
+                            </p>
+                            <a href="#" class="custom-link">
+                                <span>Read More</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="100">
+                    <div class="bq">
+                        <img class="gblgim" src="./assets/images/222.jpg" alt="Image 2">
+                        <div class="bq-content pt-4">
+                            <h1>Cloud Computing and DevOps</h1>
+                            <p>
+                                Cloud computing and DevOps have revolutionized software development and deployment. Learn how these practices enable faster, scalable, and more reliable applications.
+                            </p>
+                            <a href="#" class="custom-link">
+                                <span>Read More</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="100">
+                    <div class="bq">
+                        <img class="gblgim" src="./assets/images/333.jpg" alt="Image 3">
+                        <div class="bq-content pt-4">
+                            <h1>Exploring E-Commerce Development</h1>
+                            <p>
+                                E-commerce has become a critical part of today's economy. This article highlights the key aspects of building and maintaining successful e-commerce platforms, from security to user experience.
+                            </p>
+                            <a href="#" class="custom-link">
+                                <span>Read More</span>
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <section id="Contact" class="section-padding section-connector">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center" data-aos="fade-up" data-aos-delay="100">
+                            <h1>Contact</h1>
+                            <p>
+                                If you have any questions or would like to get in touch, feel free to reach out to me! Whether you're interested in collaborating on a project, discussing development opportunities, or just want to chat about the latest in tech, I'd love to hear from you. You can contact me via the form below or through my social media channels. Let's connect and create something amazing together!
+                            </p>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8" data-aos="fade-up" data-aos-delay="200">
+                        <form class="row g-3">
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" placeholder="Enter Subject" required>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <textarea class="form-control" placeholder="Enter Your Message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>        
+            </div>
+
+            <footer>
+                <div class="container">
+                    <div class="row gy-5">
+                        <!-- قسم Stay Updated -->
+                        <div class="col-md-4" data-aos="fade-down" data-aos-delay="100">
+                            <h4><a href="#" class="text">Stay Updated with Us</a></h4>
+                            <p>We are always connected with our followers through social media. Join us!</p>
+                            <ul class="navbar-nav flex-row">
+                                <li class="nav-item">
+                                    <a href="https://twitter.com/yourprofile" class="social-icon nav-link" aria-label="Twitter" target="_blank">
+                                        <i class="ri-twitter-line"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://github.com/yourusername" class="social-icon nav-link" aria-label="GitHub" target="_blank">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.linkedin.com/in/yourprofile" class="social-icon nav-link" aria-label="LinkedIn" target="_blank">
+                                        <i class="ri-linkedin-line"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="mailto:your-email@example.com" class="social-icon nav-link" aria-label="Email" target="_blank">
+                                        <i class="ri-mail-line"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- قسم Quick links -->
+                        <div class="col-md-3 ms-auto" data-aos="fade-up" data-aos-delay="200">
+                            <h4><a href="#" class="text">Quick links</a></h4>
+                            <ul>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- قسم Contact -->
+                        <div class="col-md-3" data-aos="fade-down" data-aos-delay="300">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><strong>Email:</strong> bouhamousaad@gmail.com</li>
+                                <li><strong>Phone:</strong> (+212649409914)</li>
+                                <li><strong>Address:</strong> GR ITIHAD N 46 HAY BOUHLAL CYM RABAT</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>            
+        </section>
+        
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+    <script src="./assets/script.js"></script>
+
+</body>
+</html>
